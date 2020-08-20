@@ -1,0 +1,46 @@
+.mission {
+    &__heading {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+        margin-top: 3em;
+
+        &::after {
+            content: '';
+            background: $tertiary-color;
+            display: block;
+            height: 8px;
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 100px;
+        }
+    }
+    &__paragraph {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 4em;
+        font-size: 2rem;
+        
+        &__red {
+            color: tomato;
+        }
+        &__orange {
+            color: $secondary-color;
+        }
+        &__blue {
+            color: $primary-color;
+        }
+        &__green {
+            color: $tertiary-color;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .mission {
+        &__paragraph {
+            font-size: 1.7rem;
+        }
+    }
+}

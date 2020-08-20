@@ -1,0 +1,102 @@
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+        font-size: 150px;
+        padding-top: .8em;
+    }
+}
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 500px;
+}
+
+.item:nth-child(1) {
+    background-color: limegreen;
+    background-image: url("../assets/hero-image__1.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.item:nth-child(2) {
+    background: #51BCE8;
+    background-image: url("../assets/hero-image__2.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.item:nth-child(3) {
+    background: #E46653;
+    background-image: url("https://images.unsplash.com/photo-1590551260013-30bfe8e26693?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-indicators {
+    li {
+        margin: 0 2em;
+    }
+
+    .active {
+        margin: 0 2em;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    html, 
+    body, 
+    .carousel, 
+    .carousel-inner, 
+    .carousel-inner .item {
+        height: 400px;
+    }
+    .carousel-fade {
+        
+        .carousel-control {
+            padding-top: .5em;
+        }
+    
+    }
+    .carousel-indicators {
+        li {
+            margin: 0 1.5em;
+        }
+    
+        .active {
+            margin: 0 1.5em;
+    
+        }
+    }
+}

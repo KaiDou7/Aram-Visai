@@ -1,0 +1,124 @@
+.contact-and-testimonials {
+    .contact {
+        border: 4px solid $secondary-color;
+        border-radius: 7px;
+        margin-top: 3em;
+        padding: 3em 2em;
+        h2 {
+            text-align: center;
+            color: $primary-color;
+            font-weight: 500;
+            margin-bottom: 1em;
+
+            &::after {
+                content: '';
+                background: $tertiary-color;
+                display: block;
+                height: 8px;
+                width: 170px;
+                margin: 0 auto;
+                border-radius: 100px;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1.5rem;
+                span {
+                    color: $secondary-color;
+                }
+            }
+            input {
+                margin-bottom: 1.5em;
+                padding: 1.2em;
+                height: 3rem;
+                border-radius: 5px;
+                border: 1px solid #000000;
+            }
+            textarea {
+                margin-bottom: 1.5em;
+                border-radius: 5px;
+                border: 1px solid #000000;
+            }
+            .contact-submit {
+                background-color: $secondary-color;
+                border: none;
+                font-weight: bold;
+                color: white;
+                height: 3em;
+                width: 50%;
+                margin: 0 auto;
+                box-shadow: 0 4px 0 #A65216;
+
+                &:active {
+                    transform: translateY(4px);
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+.testimonials {
+    margin-top: 3em;
+    .testimonial {
+        border: 2px solid #000000;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+
+        &__header {
+            font-weight: bold;
+        }
+        &__paragraph {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        &__giver {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+
+    .top-stories {
+        display: block;
+        background-color: $secondary-color;
+        border: none;
+        font-weight: bold;
+        color: white;
+        height: 3em;
+        width: 50%;
+        margin: 2em auto;
+        box-shadow: 0 4px 0 #A65216;
+        border-radius: 5px;
+
+        &:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .contact-and-testimonials {
+        display: flex;
+        justify-content: space-between;
+
+        .contact {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .testimonials {
+            width: 40%;
+        }
+    }
+}

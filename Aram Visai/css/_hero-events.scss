@@ -1,0 +1,52 @@
+//I have used mostly the same code as in the home page, for css as well as html for the navigation, footer and the hero section.
+// following are the changes in the hero section.(in css)
+
+
+//changes in the carousel images
+
+.item:nth-child(1) {
+    background-color: limegreen;
+    background-image: url("https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center center;
+}
+
+.item:nth-child(2) {
+    background: #51BCE8;
+    background-image: url("https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center center;
+}
+
+.item:nth-child(3) {
+    background: #E46653;
+    background-image: url("https://images.unsplash.com/flagged/photo-1568187113326-974ff6d0c6b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+//changes in the background color and font color of the the donate button which is now the testimonial button.
+
+.hero {
+    &__cta {
+        margin-top: 5em;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        &__donate {
+            border: 1px solid $secondary-color;
+            background-color: white;
+            border-radius: 5px;
+            color: $primary-color;
+            padding: .8em 2.5em;
+            margin-right: 2em;
+            &:hover {
+                background-color: $secondary-color;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+}

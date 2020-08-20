@@ -1,0 +1,17 @@
+.past-events__header {
+    text-align: center;
+    color: $primary-color;
+    font-weight: 500;
+    margin-top: 3em;
+
+    &::after {
+        content: '';
+        background: $tertiary-color;
+        display: block;
+        height: 8px;
+        width: 190px;
+        margin: 0 auto;
+        margin-bottom: 3em;
+        border-radius: 100px;
+    }
+}

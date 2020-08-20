@@ -1,0 +1,32 @@
+.logo-explication {
+    &__header {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+        margin-top: 3em;
+
+        &::after {
+            content: '';
+            background: $tertiary-color;
+            display: block;
+            height: 8px;
+            width: 280px;
+            margin: 0 auto;
+            border-radius: 100px;
+        }
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5em;
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo-explication {
+        &__image {
+            width: 100%;
+        }
+    }
+}
